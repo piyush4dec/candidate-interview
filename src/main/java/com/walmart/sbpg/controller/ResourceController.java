@@ -14,4 +14,9 @@ public class ResourceController {
         log.info("hello " + name);
         return String.format("Hello %s!", name);
     }
+
+    @GetMapping("/")
+    public String home() {
+        return String.format("Welcome to Spring Boot Project!");
+    }
 }
